@@ -20,7 +20,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onTimer", userInfo: nil, repeats: true)
         tableView.delegate = self
         tableView.dataSource = self
-        
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         // Do any additional setup after loading the view.
     }
