@@ -18,12 +18,12 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func emailStart(sender: AnyObject) {
-        self.emailField.text = ""
+        
     }
     
     
     @IBAction func passwordStart(sender: AnyObject) {
-        self.passwordField.text = ""
+        
     }
     @IBAction func signupPressed(sender: AnyObject) {
         var user = PFUser()

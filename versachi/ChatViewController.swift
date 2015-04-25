@@ -34,12 +34,14 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         var cell = tableView.dequeueReusableCellWithIdentifier("MessageCell") as! MessageCell
         var obj = messages[indexPath.row]
         println(obj["text"])
-        cell.message.text = obj["text"] as? String
+        
+        cell.messageLabel.text = obj["text"] as? String
         if let username = obj["user"] as? String {
-            cell.user.text = username
+            cell.usernameLabel.text = username
         } else {
-            cell.user.text = "[no username]"
+            cell.usernameLabel.text = "[no username]"
         }
+        
         return cell
     }
     
