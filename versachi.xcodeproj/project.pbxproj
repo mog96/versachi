@@ -12,6 +12,9 @@
 		25345EAE1AEC083A006F3076 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25345EAD1AEC083A006F3076 /* Images.xcassets */; };
 		25345EB11AEC083A006F3076 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25345EAF1AEC083A006F3076 /* LaunchScreen.xib */; };
 		25345EBD1AEC083A006F3076 /* versachiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25345EBC1AEC083A006F3076 /* versachiTests.swift */; };
+		25345ECB1AEC1DDB006F3076 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25345ECA1AEC1DDB006F3076 /* ChatViewController.swift */; };
+		25345ECD1AEC1DF7006F3076 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25345ECC1AEC1DF7006F3076 /* LoginViewController.swift */; };
+		25345ED01AEC1FA7006F3076 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25345ECF1AEC1FA7006F3076 /* MessageCell.swift */; };
 		A395A0D458C77CFFA95CB70F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 221891AED2C87F90786696F3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		25345EBB1AEC083A006F3076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25345EBC1AEC083A006F3076 /* versachiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = versachiTests.swift; sourceTree = "<group>"; };
 		25345EC61AEC1A06006F3076 /* versachi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "versachi-Bridging-Header.h"; sourceTree = "<group>"; };
+		25345ECA1AEC1DDB006F3076 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		25345ECC1AEC1DF7006F3076 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		25345ECF1AEC1FA7006F3076 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		629F4FDB2ECE9D88F35F1DF4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +98,8 @@
 		25345EA31AEC083A006F3076 /* versachi */ = {
 			isa = PBXGroup;
 			children = (
+				25345ECE1AEC1EDB006F3076 /* Views */,
+				25345EC91AEC1DBE006F3076 /* View Controllers */,
 				25345EA61AEC083A006F3076 /* AppDelegate.swift */,
 				25345EAA1AEC083A006F3076 /* Main.storyboard */,
 				25345EAD1AEC083A006F3076 /* Images.xcassets */,
@@ -125,6 +133,23 @@
 				25345EBB1AEC083A006F3076 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25345EC91AEC1DBE006F3076 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25345ECA1AEC1DDB006F3076 /* ChatViewController.swift */,
+				25345ECC1AEC1DF7006F3076 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		25345ECE1AEC1EDB006F3076 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25345ECF1AEC1FA7006F3076 /* MessageCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		3E8CDDDA12BCBD01F50DB8C7 /* Frameworks */ = {
@@ -270,6 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25345ECD1AEC1DF7006F3076 /* LoginViewController.swift in Sources */,
+				25345ED01AEC1FA7006F3076 /* MessageCell.swift in Sources */,
+				25345ECB1AEC1DDB006F3076 /* ChatViewController.swift in Sources */,
 				25345EA71AEC083A006F3076 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
